@@ -1,50 +1,55 @@
 {
     "project": "SGY Global Sanal Kütüphanesi",
-    "system_status": "AI_CORE_EVOLVED",
-    "foundational_principle": "Kur'an-ı Kerim / Kainat ve İlim Bütünlüğü",
+    "system_status": "ZULKARNEYN_SHIELD_ACTIVE",
+    "foundational_principle": "Kur'an-ı Kerim / Kainat, Teknoloji ve Mühendislik Bütünlüğü",
     "ai_core_metrics": {
         "learning_rate": 0.05,
-        "optimized_threshold": 55,
-        "processed_surahs": 2,
-        "version": "2.1_Knowledge_Layer_Fixed"
+        "optimized_threshold": 60,
+        "processed_surahs": 3,
+        "version": "2.2_Zulkarneyn_Layer"
+    },
+    "zulkarneyn_special_study": {
+        "concept": "Zülkarneyn'in Seddi ve Sebepleri Kullanma İlmi",
+        "ayat_reference": "Kehf Suresi 84. Ayet: 'Gerçekten biz onu yeryüzünde iktidar sahibi yaptık ve ona ulaşmak istediği her şey için bir sebep (yol, ilim, vasıta) verdik.'",
+        "technological_insight": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
     },
     "multilingual_insights": [
         {
             "language": "TR",
-            "status": "READ_AND_INDEXED",
-            "extracted_wisdom": "Mizan ve Evrensel Ölçü Kavramı İncelendi.",
-            "derived_insight": "Evrendeki her atomik ve kozmik hareket, muazzam bir denge (Mizan) üzere hareket eder."
+            "status": "PROCESSED_AND_INTEGRATED",
+            "study_name": "Zülkarneyn A.S. Bilgi ve Mühendislik Modeli",
+            "extracted_wisdom": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
         },
         {
             "language": "EN",
-            "status": "READ_AND_INDEXED",
-            "extracted_wisdom": "Mizan ve Evrensel Ölçü Kavramı İncelendi.",
-            "derived_insight": "Evrendeki her atomik ve kozmik hareket, muazzam bir denge (Mizan) üzere hareket eder."
+            "status": "PROCESSED_AND_INTEGRATED",
+            "study_name": "Zülkarneyn A.S. Bilgi ve Mühendislik Modeli",
+            "extracted_wisdom": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
         },
         {
             "language": "DE",
-            "status": "READ_AND_INDEXED",
-            "extracted_wisdom": "Mizan ve Evrensel Ölçü Kavramı İncelendi.",
-            "derived_insight": "Evrendeki her atomik ve kozmik hareket, muazzam bir denge (Mizan) üzere hareket eder."
+            "status": "PROCESSED_AND_INTEGRATED",
+            "study_name": "Zülkarneyn A.S. Bilgi ve Mühendislik Modeli",
+            "extracted_wisdom": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
         },
         {
             "language": "FR",
-            "status": "READ_AND_INDEXED",
-            "extracted_wisdom": "Mizan ve Evrensel Ölçü Kavramı İncelendi.",
-            "derived_insight": "Evrendeki her atomik ve kozmik hareket, muazzam bir denge (Mizan) üzere hareket eder."
+            "status": "PROCESSED_AND_INTEGRATED",
+            "study_name": "Zülkarneyn A.S. Bilgi ve Mühendislik Modeli",
+            "extracted_wisdom": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
         },
         {
             "language": "ES",
-            "status": "READ_AND_INDEXED",
-            "extracted_wisdom": "Mizan ve Evrensel Ölçü Kavramı İncelendi.",
-            "derived_insight": "Evrendeki her atomik ve kozmik hareket, muazzam bir denge (Mizan) üzere hareket eder."
+            "status": "PROCESSED_AND_INTEGRATED",
+            "study_name": "Zülkarneyn A.S. Bilgi ve Mühendislik Modeli",
+            "extracted_wisdom": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
         },
         {
             "language": "RU",
-            "status": "READ_AND_INDEXED",
-            "extracted_wisdom": "Mizan ve Evrensel Ölçü Kavramı İncelendi.",
-            "derived_insight": "Evrendeki her atomik ve kozmik hareket, muazzam bir denge (Mizan) üzere hareket eder."
+            "status": "PROCESSED_AND_INTEGRATED",
+            "study_name": "Zülkarneyn A.S. Bilgi ve Mühendislik Modeli",
+            "extracted_wisdom": "Demir kütleleri ve erimiş bakır eritilerek yapılan aşılmaz bariyer, günümüz teknolojisinde geçit vermez siber savunma kalkanlarını ve donanımsal Fail-Safe zırhlarını temsil eder. İlim ve vesileler (araçlar) otonom niyetle birleştiğinde aşılmaz yapılar kurulur."
         }
     ],
-    "timestamp": 1781671932
+    "timestamp": 1781672026
 }

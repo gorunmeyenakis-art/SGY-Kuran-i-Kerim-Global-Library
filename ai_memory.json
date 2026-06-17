@@ -1,6 +1,6 @@
 {
     "learning_rate": 0.05,
-    "optimized_threshold": 55,
-    "processed_surahs": 2,
-    "version": "2.1_Knowledge_Layer_Fixed"
+    "optimized_threshold": 60,
+    "processed_surahs": 3,
+    "version": "2.2_Zulkarneyn_Layer"
 }
