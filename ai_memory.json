@@ -1,0 +1,5 @@
+{
+    "learning_rate": 0.05,
+    "optimized_threshold": 52,
+    "version": "1.0"
+}
