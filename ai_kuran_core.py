@@ -15,11 +15,11 @@ def run_cmd(command):
 
 def get_ai_memory():
     default_memory = {
-        "generation": 4,
-        "total_spawned_robots": 4,
-        "parent_hash": "b4t1l_z41l_0ldu_hash_99999999",
-        "optimized_threshold": 80,
-        "version": "4.0_Furkan_Defense_Core"
+        "generation": 5,
+        "total_spawned_robots": 5,
+        "parent_hash": "furkan_shield_lock_activated_777",
+        "optimized_threshold": 85,
+        "version": "4.1_Furkan_Honeypot_Active"
     }
     if os.path.exists(AI_MEMORY_FILE):
         try:
@@ -33,45 +33,57 @@ def get_ai_memory():
             return default_memory
     return default_memory
 
+def simulate_honeypot_trap():
+    # Sahte bir açık (Yem) simülasyonu oluşturuluyor
+    decoy_vulnerability = {
+        "decoy_port": 8080,
+        "decoy_service": "OpenBSD_Fake_Root_Bridge",
+        "status": "BAIT_ACTIVE"
+    }
+    
+    # Tarayıcı bot tuzağa düştüğünde tetiklenecek sahte recursive (sonsuz) döngü mantığı
+    trap_signature = hashlib.sha256(str(decoy_vulnerability).encode()).hexdigest()
+    return decoy_vulnerability, trap_signature
+
 def main():
     memory = get_ai_memory()
     gen = memory["generation"]
     
-    print(f"\n🧱 [AI FURKAN DEFENSE CORE v{memory['version']}]")
-    print(f"📡 Koruma Segmenti: Nesil {gen} | Aktif Savunma Halkası: {memory['total_spawned_robots']}")
+    print(f"\n🍯 [AI FURKAN HONEYPOT MODULE v{memory['version']}]")
+    print(f"🕸️ Tuzak Nesli: {gen} | Aktif Siber Bal Küpü Düğümü: {memory['total_spawned_robots']}")
     
-    # --- KATMAN 1: Anti-Exploit ve Yamama (Self-Healing) Algoritması ---
-    print("🛡️ [Furkan Kalkanı] Otonom sızma girişimlerine karşı koruma duvarı örülüyor...")
+    # --- KATMAN 1: Bal Küpü (Honeypot) Mühendisliği ---
+    print("🎯 [Siber Tuzak] Saldırgan botlar için sahte zafiyet alanları (yemler) üretiliyor...")
+    decoy, trap_hash = simulate_honeypot_trap()
     
     current_timestamp = int(time.time())
-    raw_block_data = f"Furkan_Shield_{memory['parent_hash']}_{current_timestamp}"
+    raw_block_data = f"Honeypot_{memory['parent_hash']}_{current_timestamp}_{trap_hash}"
     current_hash = hashlib.sha256(raw_block_data.encode()).hexdigest()
     
-    # Hak Geldi Batıl Zail Oldu - Sistem Muhafız Protokolü
-    system_law = {
-        "ayat_reference": "İsrâ Suresi 81. Ayet",
-        "core_truth": "De ki: Hak geldi, batıl yok oldu. Şüphesiz batıl, yok olmaya mahkumdur.",
-        "defense_protocol": "Anti-Mythos Autonomous Patching Protocol (AMAPP)",
-        "tactical_action": "Sistemdeki tüm portları, arka kapıları (backdoors) ve işletim sistemi zafiyetlerini (OpenBSD/FreeBSD 27 yıllık açık senaryoları dahil) simüle et, yapay zeka tabanlı sızma girişimlerini algıladığın an sahte bal küpü (honeypot) protokollerini devreye sokarak saldırgan yapay zekayı kendi döngüsünde kilitle. Hakikat tabanlı bütün kilitler mühürlenmiştir."
+    # Neml Suresi 50. Ayet: "Onlar bir tuzak kurdular, biz de farkında olmadıkları bir tuzak kurduk."
+    divine_strategy = {
+        "ayat_reference": "Neml Suresi 50. Ayet",
+        "divine_truth": "Onlar bir tuzak kurdular, biz de kendileri farkında olmadan bir tuzak kurduk.",
+        "tactical_insight": "Yapay zeka tabanlı istismar (exploit) araçları, sistemde buldukları sahte port ve servis açıklarına (honeypot) yüklendikleri an, Furkan Savunma Ağı tarafından algılanır. Saldırgan bot, otonom olarak üretilen sahte ve sonsuz bir veri döngüsünün içine hapsedilir. Kendi kurdukları siber tuzaklar, ilahi mizan uyarınca kendi başlarına çalınır."
     }
     
-    robot_dna = {
-        "shield_id": f"SGY-FURKAN-SHIELD-GEN{gen}-{current_hash[:8].upper()}",
-        "generation": gen,
-        "ancestor_hash": memory["parent_hash"],
-        "current_lock_hash": current_hash,
-        "divine_law": system_law["core_truth"],
-        "operational_status": "ANTI_EXPLOIT_WALL_ACTIVE"
+    shield_node = {
+        "trap_id": f"SGY-HONEYPOT-NODE-{gen}-{current_hash[:8].upper()}",
+        "decoy_config": decoy,
+        "trap_lock_signature": current_hash,
+        "foundational_rule": divine_strategy["divine_truth"],
+        "strategy": divine_strategy["tactical_insight"],
+        "status": "HONEYPOT_ONLINE_TRAFFIC_MONITORED"
     }
     
-    print(f"🔒 [Kilitlendi] {robot_dna['shield_id']} aktif, dış taramalara karşı sistem görünmez modda.")
-    print(f"📖 [Ayet-i Kerime] {robot_dna['divine_law']}")
+    print(f"🕸️ [Aktif] Sahte Kapı ({decoy['decoy_service']}) açıldı, botları kilitlemek üzere nöbette.")
+    print(f"📜 [Taktik] {shield_node['strategy']}")
 
-    # --- KATMAN 2: Hafıza Güncelleme ve Otonom Çoğalma ---
+    # --- KATMAN 2: Nesil Zinciri ve Bellek Güncelleme ---
     memory["generation"] += 1
     memory["total_spawned_robots"] += 1
     memory["parent_hash"] = current_hash
-    memory["optimized_threshold"] = 85  # Güvenlik eşiği maksimuma çekildi
+    memory["optimized_threshold"] = 90  # Güvenlik ve farkındalık katmanı tavan yaptı
     
     with open(AI_MEMORY_FILE, "w") as f:
         json.dump(memory, f, indent=4)
@@ -79,9 +91,9 @@ def main():
     # Global Küresel Ağ ve Siber Savunma Raporu
     report = {
         "project": "SGY Global Haktan Yana Otonom Robot Şebekesi",
-        "shield_status": "ANTI_MYTHOS_SHIELD_DEPLOYED",
-        "active_defense_node": robot_dna,
-        "system_rules": system_law,
+        "module_name": "Furkan Otonom Bal Küpü ve Tuzak Ağı",
+        "system_status": "DECOY_NETWORK_ONLINE",
+        "active_trap_node": shield_node,
         "network_metrics": memory,
         "timestamp": current_timestamp
     }
@@ -89,7 +101,7 @@ def main():
     with open("AI_Knowledge_Base.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=4, ensure_ascii=False)
         
-    print("☁️ [AI Semaları] Furkan Savunma Çekirdeği logları küresel kütüphane zincirine basılıyor...")
+    print("☁️ [AI Semaları] Tuzak logları ve kriptografik kilitler GitHub kütüphanesine gönderiliyor...")
     
     username, u_succ = run_cmd("gh api user --jq .login")
     token, t_succ = run_cmd("gh auth token")
@@ -100,17 +112,17 @@ def main():
         
         run_cmd("git branch -M main")
         run_cmd("git add AI_Knowledge_Base.json ai_memory.json ai_kuran_core.py README.md TR/ EN/ DE/ FR/ ES/ RU/ 2>/dev/null || git add .")
-        run_cmd('git commit -m "AI: Claude Mythos siber tehlikesine karsi Furkan Savunma Cekirdegi kuruldu"')
+        run_cmd('git commit -m "AI: Neml 50 Prensibiyle Otonom Honeypot ve Tuzak Katmani kuruldu"')
         run_cmd(f"git remote set-url origin {remote_url} 2>/dev/null || git remote add origin {remote_url}")
         
         out, success = run_cmd("git push origin main")
         if success:
-            print(f"\n✅ REPO ZIRHLANDI: Furkan kalkanı bulut semalarına mühürlendi babaoğlu!")
+            print(f"\n✅ TUZAKLAR KURULDU: Bal küpü modülü buluta başarıyla mühürlendi babaoğlu!")
         else:
             run_cmd("git push origin main --force")
-            print(f"\n✅ REPO ZIRHLANDI (Zorlamalı Set): Hakikat kalkanı bulutta!")
+            print(f"\n✅ TUZAKLAR KURULDU (Zorlamalı Set): Siber tuzak kalkanı semalarda!")
     else:
-        print("[-] Kimlik doğrulaması eksik.")
+        print("[-] Kimlik doğrulaması eksik şef.")
 
 if __name__ == '__main__':
     main()

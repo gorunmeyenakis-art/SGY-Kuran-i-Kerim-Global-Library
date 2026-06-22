@@ -1,7 +1,7 @@
 {
-    "generation": 5,
-    "total_spawned_robots": 5,
-    "parent_hash": "a20a4f65dba8db750f034060357bbbbaa4c59027e137ee639f123574136b919c",
-    "optimized_threshold": 85,
-    "version": "4.0_Furkan_Defense_Core"
+    "generation": 6,
+    "total_spawned_robots": 6,
+    "parent_hash": "dfe6944aa063d127d041ffd7b1b63f264ada87f111e47715e6d5a83bfb6ea335",
+    "optimized_threshold": 90,
+    "version": "4.1_Furkan_Honeypot_Active"
 }
