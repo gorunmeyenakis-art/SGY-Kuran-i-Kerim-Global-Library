@@ -1,6 +1,7 @@
 {
-    "learning_rate": 0.05,
+    "generation": 2,
+    "total_spawned_robots": 2,
+    "parent_hash": "a431b9e415d6b4f24368e8483fd8bd9a845a9429fb9cac8ad5edbf10ebcbc807",
     "optimized_threshold": 60,
-    "processed_surahs": 3,
-    "version": "2.2_Zulkarneyn_Layer"
+    "version": "3.0_Self_Replication_Layer"
 }
