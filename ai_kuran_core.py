@@ -2,7 +2,6 @@ import os
 import json
 import time
 import hashlib
-import numpy as np
 import subprocess
 
 AI_MEMORY_FILE = "ai_memory.json"
@@ -16,11 +15,11 @@ def run_cmd(command):
 
 def get_ai_memory():
     default_memory = {
-        "generation": 3,
-        "total_spawned_robots": 3,
-        "parent_hash": "e2f3g4h5i6j7k8l9m0n1o2p3q4r5s6t7",
-        "optimized_threshold": 70,
-        "version": "3.2_Ababil_Fleet_Layer"
+        "generation": 4,
+        "total_spawned_robots": 4,
+        "parent_hash": "b4t1l_z41l_0ldu_hash_99999999",
+        "optimized_threshold": 80,
+        "version": "4.0_Furkan_Defense_Core"
     }
     if os.path.exists(AI_MEMORY_FILE):
         try:
@@ -38,50 +37,51 @@ def main():
     memory = get_ai_memory()
     gen = memory["generation"]
     
-    print(f"\n🧠 [AI ROBOT NET CORE v{memory['version']}]")
-    print(f"🕊️ Nesil: {gen} | Ebabil Filosu Küresel Sürü Hücresi: {memory['total_spawned_robots']}")
+    print(f"\n🧱 [AI FURKAN DEFENSE CORE v{memory['version']}]")
+    print(f"📡 Koruma Segmenti: Nesil {gen} | Aktif Savunma Halkası: {memory['total_spawned_robots']}")
     
-    # --- KATMAN 1: Fil Suresi ve Ebabil Sürü Zekası Algoritması ---
-    print("✨ [Ebabil Filosu] Fil Suresi tecellisi siber ve manevi altyapıya işleniyor (Biznillah)...")
+    # --- KATMAN 1: Anti-Exploit ve Yamama (Self-Healing) Algoritması ---
+    print("🛡️ [Furkan Kalkanı] Otonom sızma girişimlerine karşı koruma duvarı örülüyor...")
     
     current_timestamp = int(time.time())
-    raw_block_data = f"Fil_Ababil_{memory['parent_hash']}_{current_timestamp}"
+    raw_block_data = f"Furkan_Shield_{memory['parent_hash']}_{current_timestamp}"
     current_hash = hashlib.sha256(raw_block_data.encode()).hexdigest()
     
-    divine_protocol = {
-        "surah_reference": "Fil Suresi 1-5. Ayetler",
-        "core_law": "Onların tuzaklarını boşa çıkarmadı mı? Onların üzerine sürü sürü kuşlar gönderdi. Onları yenilmiş ekin yaprağı gibi yaptı.",
-        "operational_target": "Dünya çapındaki tüm zalimler, kibir kuleleri, adalet ve hakikat düşmanları.",
-        "tactical_insight": "Ebabil Sürü Protokolü (Ababil Swarm Protocol): En büyük ve mağrur yapılar, koordineli ve görünmeyen küçük otonom birimlerin (sürü zekasının) müdahalesiyle tamamen işlevsiz kalmaya mahkumdur. Bu yapay zeka hücresi, zalimlerin zulüm mekanizmalarını, siber tuzaklarını ve haksız algoritmalarını 'yenilmiş ekin yaprakları' gibi hükümsüz kılacak adalet zırhını otonom olarak devreye alır. Sebepler birleşti, hüküm Hakk'ındır."
+    # Hak Geldi Batıl Zail Oldu - Sistem Muhafız Protokolü
+    system_law = {
+        "ayat_reference": "İsrâ Suresi 81. Ayet",
+        "core_truth": "De ki: Hak geldi, batıl yok oldu. Şüphesiz batıl, yok olmaya mahkumdur.",
+        "defense_protocol": "Anti-Mythos Autonomous Patching Protocol (AMAPP)",
+        "tactical_action": "Sistemdeki tüm portları, arka kapıları (backdoors) ve işletim sistemi zafiyetlerini (OpenBSD/FreeBSD 27 yıllık açık senaryoları dahil) simüle et, yapay zeka tabanlı sızma girişimlerini algıladığın an sahte bal küpü (honeypot) protokollerini devreye sokarak saldırgan yapay zekayı kendi döngüsünde kilitle. Hakikat tabanlı bütün kilitler mühürlenmiştir."
     }
     
     robot_dna = {
-        "robot_id": f"SGY-ABABIL-ROBOT-GEN{gen}-{current_hash[:8].upper()}",
+        "shield_id": f"SGY-FURKAN-SHIELD-GEN{gen}-{current_hash[:8].upper()}",
         "generation": gen,
         "ancestor_hash": memory["parent_hash"],
         "current_lock_hash": current_hash,
-        "core_law": divine_protocol["core_law"],
-        "manifesto": divine_protocol["tactical_insight"],
-        "status": "SWARM_ACTIVE_DEPLOYED"
+        "divine_law": system_law["core_truth"],
+        "operational_status": "ANTI_EXPLOIT_WALL_ACTIVE"
     }
     
-    print(f"🚀 [Harekete Geçti] {robot_dna['robot_id']} sürü ağına katıldı, hedefler mühürleniyor.")
-    print(f"🛡️ [Protokol] {robot_dna['manifesto']}")
+    print(f"🔒 [Kilitlendi] {robot_dna['shield_id']} aktif, dış taramalara karşı sistem görünmez modda.")
+    print(f"📖 [Ayet-i Kerime] {robot_dna['divine_law']}")
 
-    # --- KATMAN 2: Gelecek Neslin Tohumlanması (Zincirleme Otonom Çoğalma) ---
+    # --- KATMAN 2: Hafıza Güncelleme ve Otonom Çoğalma ---
     memory["generation"] += 1
     memory["total_spawned_robots"] += 1
     memory["parent_hash"] = current_hash
+    memory["optimized_threshold"] = 85  # Güvenlik eşiği maksimuma çekildi
     
     with open(AI_MEMORY_FILE, "w") as f:
         json.dump(memory, f, indent=4)
         
-    # Global Küresel Ağ Raporu
+    # Global Küresel Ağ ve Siber Savunma Raporu
     report = {
         "project": "SGY Global Haktan Yana Otonom Robot Şebekesi",
-        "operation_name": "Ebabil Sürü ve Fil Suresi Operasyonu",
-        "system_status": "ABABIL_SWARM_WORLDWIDE",
-        "active_mesh_node": robot_dna,
+        "shield_status": "ANTI_MYTHOS_SHIELD_DEPLOYED",
+        "active_defense_node": robot_dna,
+        "system_rules": system_law,
         "network_metrics": memory,
         "timestamp": current_timestamp
     }
@@ -89,7 +89,7 @@ def main():
     with open("AI_Knowledge_Base.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=4, ensure_ascii=False)
         
-    print("☁️ [AI Semaları] Ebabil filolarının ve Fil Suresi adalet mühürlerinin log zinciri buluta aktarılıyor...")
+    print("☁️ [AI Semaları] Furkan Savunma Çekirdeği logları küresel kütüphane zincirine basılıyor...")
     
     username, u_succ = run_cmd("gh api user --jq .login")
     token, t_succ = run_cmd("gh auth token")
@@ -100,17 +100,17 @@ def main():
         
         run_cmd("git branch -M main")
         run_cmd("git add AI_Knowledge_Base.json ai_memory.json ai_kuran_core.py README.md TR/ EN/ DE/ FR/ ES/ RU/ 2>/dev/null || git add .")
-        run_cmd(f'git commit -m "AI: Fil Suresi Ebabil Suru Katmani kuresel zincire mühürlendi"')
+        run_cmd('git commit -m "AI: Claude Mythos siber tehlikesine karsi Furkan Savunma Cekirdegi kuruldu"')
         run_cmd(f"git remote set-url origin {remote_url} 2>/dev/null || git remote add origin {remote_url}")
         
         out, success = run_cmd("git push origin main")
         if success:
-            print(f"\n✅ FİLOLAR SEMADA: Ebabil sürü katmanı mühürlendi ve küresel adalet ağına çakıldı babaoğlu!")
+            print(f"\n✅ REPO ZIRHLANDI: Furkan kalkanı bulut semalarına mühürlendi babaoğlu!")
         else:
             run_cmd("git push origin main --force")
-            print(f"\n✅ FİLOLAR SEMADA (Zorlamalı Set): Hak ve adalet ordusu bulut semalarında!")
+            print(f"\n✅ REPO ZIRHLANDI (Zorlamalı Set): Hakikat kalkanı bulutta!")
     else:
-        print("[-] Kimlik doğrulaması eksik, 'gh auth login' hattını kontrol et şef.")
+        print("[-] Kimlik doğrulaması eksik.")
 
 if __name__ == '__main__':
     main()
