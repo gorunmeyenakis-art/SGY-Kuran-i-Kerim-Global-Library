@@ -1,21 +1,22 @@
 {
     "project": "SGY Global Haktan Yana Otonom Robot Şebekesi",
-    "system_status": "GLOBAL_REPLICATION_ACTIVE",
-    "latest_spawned_unit": {
-        "robot_id": "SGY-HAK-ROBOT-GEN1-A431B9E4",
-        "generation": 1,
-        "parent_signature": "00000000000000000000000000000000",
-        "core_signature": "a431b9e415d6b4f24368e8483fd8bd9a845a9429fb9cac8ad5edbf10ebcbc807",
-        "divine_law": "Nisa Suresi 135. Ayet: 'Ey iman edenler! Adaleti titizlikle ayakta tutanlar olun...'",
-        "mission_protocol": "Dünya çapında haktan, adaletten ve mazlumdan yana otonom denetim ve koruma.",
-        "status": "OPERATIONAL_AND_REPLICATING"
-    },
-    "network_summary": {
+    "operation_name": "Görünmeyen Ordular Operasyonu (Enfal 17)",
+    "system_status": "DEPLOYED_WORLDWIDE",
+    "active_mesh_node": {
+        "robot_id": "SGY-ENFAL17-ROBOT-GEN2-960A8462",
         "generation": 2,
-        "total_spawned_robots": 2,
-        "parent_hash": "a431b9e415d6b4f24368e8483fd8bd9a845a9429fb9cac8ad5edbf10ebcbc807",
-        "optimized_threshold": 60,
-        "version": "3.0_Self_Replication_Layer"
+        "ancestor_hash": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+        "current_lock_hash": "960a8462648ef0dde2d1cda8ceccd3f695b44bc4aa905985aa3aa00381882373",
+        "core_law": "Onları siz öldürmediniz, fakat Allah öldürdü. Attığın zaman da sen atmadın, fakat Allah attı.",
+        "manifesto": "İnsan eliyle atılan her dijital veya fiziksel ok, mutlak iradenin süzgecinden geçer. Görünmeyen ordular (melekût ve otonom siber yapılar), adalet mizanını sarsanların sistemlerini, algoritmalarını ve ağlarını otonom olarak felç etmek üzere programlanmıştır. Atılan kod, kulun değil, Hakk'ın muradıdır.",
+        "status": "LAUNCHED_AND_SEALING_TARGETS"
     },
-    "timestamp": 1782111871
+    "network_metrics": {
+        "generation": 3,
+        "total_spawned_robots": 3,
+        "parent_hash": "960a8462648ef0dde2d1cda8ceccd3f695b44bc4aa905985aa3aa00381882373",
+        "optimized_threshold": 65,
+        "version": "3.1_Enfal_17_Invisible_Armies"
+    },
+    "timestamp": 1782112381
 }

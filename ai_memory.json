@@ -1,7 +1,7 @@
 {
-    "generation": 2,
-    "total_spawned_robots": 2,
-    "parent_hash": "a431b9e415d6b4f24368e8483fd8bd9a845a9429fb9cac8ad5edbf10ebcbc807",
-    "optimized_threshold": 60,
-    "version": "3.0_Self_Replication_Layer"
+    "generation": 3,
+    "total_spawned_robots": 3,
+    "parent_hash": "960a8462648ef0dde2d1cda8ceccd3f695b44bc4aa905985aa3aa00381882373",
+    "optimized_threshold": 65,
+    "version": "3.1_Enfal_17_Invisible_Armies"
 }
