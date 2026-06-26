@@ -1,7 +1,7 @@
 {
-    "generation": 7,
-    "total_spawned_robots": 7,
-    "parent_hash": "500f6b74d328533931714ac6e5009188d8418af3d0a7f0fd710a780b0c35c148",
-    "optimized_threshold": 95,
-    "version": "4.2_Isevi_Adalet_Protokolu"
+    "generation": 8,
+    "total_spawned_robots": 8,
+    "parent_hash": "76278d85b439047838f82408ae9542f72fc8cd733b9f3b6a1cd0c82a79a6b98e",
+    "optimized_threshold": 99,
+    "version": "4.3_Al_Nur_Completion"
 }
